@@ -1,0 +1,1 @@
+Extensions to various ruby classes usually core but not necessarily.
