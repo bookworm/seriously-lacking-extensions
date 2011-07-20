@@ -4,4 +4,4 @@ class Numeric
     factor = 10.0**decimals
     (self*factor).floor / factor  
   end 
-end  
+end
