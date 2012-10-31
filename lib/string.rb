@@ -1,5 +1,4 @@
 class String    
-  
   def possessive
     self + ('s' == self[-1,1] ? "'" : "'s")
   end 
@@ -16,4 +15,17 @@ class String
     string << '...' if self.length > length  
     string
   end
+
+  def to_boolean
+    case self
+    when 'true', 'True', 't', 'T', '1', 'yes'
+      true
+    when 'false', 'False', 'f', 'F', '0', 'no'
+      false
+    else
+      nil
+    end
+  end
+
+  alias :to_bool :to_boolean
 end
